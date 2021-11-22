@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SingleApplication.module.css";
-import { formatDate } from "./utils";
+import { formatDate, formatCurrency } from "./utils";
 
 const SingleApplication = ({ application }) => {
   return (
@@ -19,7 +19,7 @@ const SingleApplication = ({ application }) => {
       </div>
       <div className={styles.cell}>
         <sub>Loan Amount</sub>
-        {application.loan_amount}
+        {formatCurrency(application.loan_amount)}
       </div>
       <div className={styles.cell}>
         <sub>Application Date</sub>
