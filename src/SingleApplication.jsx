@@ -4,7 +4,7 @@ import { formatDate } from "./utils";
 
 const SingleApplication = ({ application }) => {
   return (
-    <div className={styles.SingleApplication}>
+    <div className={styles.SingleApplication} data-testid="application">
       <div className={styles.cell}>
         <sub>Company</sub>
         {application.company}

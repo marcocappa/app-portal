@@ -37,7 +37,7 @@ const Applications = () => {
           <p>Loading Applications...</p>
         </div>
       )}
-      {!loading && !error && <p>{error}</p>}
+      {!loading && error && <p>{error}</p>}
       {!loading && !error && applications.length > 0 && (
         <>
           {applications.map((application) => (
