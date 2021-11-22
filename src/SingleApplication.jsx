@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./SingleApplication.module.css";
+import { formatDate } from "./utils";
 
 const SingleApplication = ({ application }) => {
   return (
@@ -22,11 +23,11 @@ const SingleApplication = ({ application }) => {
       </div>
       <div className={styles.cell}>
         <sub>Application Date</sub>
-        {application.date_created}
+        {formatDate(application.date_created)}
       </div>
       <div className={styles.cell}>
         <sub>Expiry date</sub>
-        {application.expiry_date}
+        {formatDate(application.expiry_date)}
       </div>
     </div>
   );
